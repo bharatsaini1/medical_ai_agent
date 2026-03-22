@@ -104,12 +104,13 @@ def index():
 
 @app.route("/health", methods=["GET"])
 def health():
-    """Health check — returns server status."""
+    """Health check — always returns 200 so Railway doesn't kill the container."""
     return jsonify({
         "status":  "healthy",
         "model":   config.LLM_MODEL,
         "dataset": f"{len(documents)} records",
         "index":   config.PINECONE_INDEX_NAME,
+        "indexing_complete": not indexing_thread.is_alive(),
     }), 200
 
 
