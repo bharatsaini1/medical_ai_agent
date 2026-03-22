@@ -53,6 +53,23 @@ agent = MedicalAgent(hybrid_retriever)
 logger.info("AI Agent ready ✓")
 
 
+# ── Background indexing ──────────────────────────────────────
+# Run Pinecone indexing in background so Flask starts immediately
+# Health check passes right away, indexing completes within 2 min
+import threading
+
+def background_setup():
+    try:
+        logger.info("Background: Starting Pinecone indexing...")
+        hybrid_retriever.vector_retriever.index_documents(documents)
+        logger.info("Background: Pinecone indexing complete ✓")
+    except Exception as e:
+        logger.error(f"Background indexing error: {e}")
+
+indexing_thread = threading.Thread(target=background_setup, daemon=True)
+indexing_thread.start()
+logger.info("Background indexing thread started — Flask starting now")
+
 # ─────────────────────────────────────────────────────────────
 #  FLASK APP
 # ─────────────────────────────────────────────────────────────
