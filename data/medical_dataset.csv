@@ -1,0 +1,27 @@
+Name,Symptoms,Treatments,Disease_Code,Contagious,Chronic
+Influenza,"Fever, chills, muscle aches, cough, congestion, runny nose, headaches, fatigue","Rest, fluids, antiviral medications (oseltamivir), pain relievers, fever reducers",J11,Yes,No
+Common Cold,"Runny nose, sneezing, sore throat, cough, congestion, slight body aches, low-grade fever","Rest, fluids, decongestants, antihistamines, throat lozenges, vitamin C",J00,Yes,No
+Type 2 Diabetes,"Increased thirst, frequent urination, hunger, fatigue, blurred vision, slow healing sores, frequent infections","Lifestyle changes, metformin, insulin therapy, blood sugar monitoring, diet control, exercise",E11,No,Yes
+Hypertension,"Headaches, shortness of breath, nosebleeds, flushing, dizziness, chest pain, visual changes","ACE inhibitors, beta-blockers, diuretics, calcium channel blockers, lifestyle modifications, low-sodium diet",I10,No,Yes
+Asthma,"Shortness of breath, chest tightness, wheezing, coughing (especially at night)","Bronchodilators, inhaled corticosteroids, leukotriene modifiers, long-acting beta agonists, allergy treatment",J45,No,Yes
+Pneumonia,"Cough with phlegm, fever, chills, shortness of breath, chest pain, fatigue, nausea","Antibiotics, antiviral medications, rest, fluids, pain/fever reducers, hospitalization if severe",J18,Yes,No
+Migraine,"Throbbing headache, nausea, vomiting, sensitivity to light and sound, visual aura","Triptans, NSAIDs, anti-nausea medications, ergotamines, beta-blockers, topiramate, rest in dark quiet room",G43,No,Yes
+Depression,"Persistent sadness, loss of interest, fatigue, sleep disturbances, appetite changes, difficulty concentrating, feelings of worthlessness","Antidepressants (SSRIs, SNRIs), psychotherapy, CBT, lifestyle changes, exercise, social support",F32,No,Yes
+Anxiety Disorder,"Excessive worry, restlessness, fatigue, difficulty concentrating, irritability, muscle tension, sleep problems","CBT, antianxiety medications, SSRIs, benzodiazepines, relaxation techniques, mindfulness, exercise",F41,No,Yes
+Urinary Tract Infection,"Burning urination, frequent urge to urinate, cloudy urine, strong urine odor, pelvic pain, fever","Antibiotics (trimethoprim, nitrofurantoin, ciprofloxacin), fluids, urinary analgesics",N39,Yes,No
+Gastroenteritis,"Nausea, vomiting, diarrhea, stomach cramps, fever, headache, muscle aches","Oral rehydration, rest, bland diet, antiemetics, probiotics, antibiotics if bacterial",A09,Yes,No
+Arthritis,"Joint pain, stiffness, swelling, decreased range of motion, redness around joints","NSAIDs, DMARDs, biologics, corticosteroids, physical therapy, joint replacement surgery",M19,No,Yes
+Hypothyroidism,"Fatigue, weight gain, cold sensitivity, constipation, dry skin, puffy face, hoarse voice, muscle weakness","Levothyroxine (synthetic thyroid hormone), regular TSH monitoring, iodine supplementation",E03,No,Yes
+Hyperthyroidism,"Weight loss, rapid heartbeat, increased appetite, nervousness, tremors, sweating, heat sensitivity","Antithyroid medications, radioactive iodine, beta-blockers, thyroidectomy",E05,No,Yes
+Anemia,"Fatigue, weakness, pale skin, shortness of breath, dizziness, cold hands and feet, chest pain","Iron supplements, B12 injections, folic acid, blood transfusions, treating underlying cause",D64,No,Yes
+GERD,"Heartburn, acid reflux, chest pain, difficulty swallowing, regurgitation, hoarse voice","PPIs, H2 blockers, antacids, lifestyle modifications, weight loss, avoiding trigger foods",K21,No,Yes
+Sinusitis,"Facial pain/pressure, nasal congestion, thick nasal discharge, reduced sense of smell, cough, fever","Decongestants, nasal corticosteroids, saline rinse, antibiotics if bacterial, pain relievers",J32,Yes,No
+Eczema,"Dry itchy skin, red rashes, skin inflammation, blisters, crusting, thickened skin","Moisturizers, topical corticosteroids, antihistamines, immunosuppressants, wet wraps, avoiding triggers",L20,No,Yes
+Psoriasis,"Red patches with silvery scales, dry cracked skin, itching, burning, thickened nails, stiff joints","Topical treatments, phototherapy, methotrexate, biologics, retinoids, moisturizers",L40,No,Yes
+Kidney Stones,"Severe back/side pain, pain radiating to lower abdomen, painful urination, pink/red urine, nausea, vomiting","Pain management, increased fluids, alpha-blockers, lithotripsy, ureteroscopy, surgery for large stones",N20,No,No
+Appendicitis,"Sudden pain near navel moving to lower right abdomen, nausea, vomiting, fever, loss of appetite, abdominal bloating","Appendectomy (surgical removal), antibiotics before/after surgery, pain management",K37,No,No
+Chickenpox,"Itchy blister rash, fever, tiredness, loss of appetite, headache","Antiviral medications (acyclovir), calamine lotion, antihistamines, rest, fluids, avoid scratching",B01,Yes,No
+Measles,"High fever, cough, runny nose, red eyes, skin rash starting from face","Supportive care, fever reducers, vitamin A supplements, rest, fluids, isolation",B05,Yes,No
+Tuberculosis,"Persistent cough lasting 3+ weeks, blood in sputum, chest pain, fatigue, weight loss, night sweats, fever","6-month antibiotic regimen (isoniazid, rifampin, pyrazinamide, ethambutol), directly observed therapy",A15,Yes,Yes
+Malaria,"Fever with chills and sweating cycles, headache, muscle aches, nausea, vomiting, fatigue","Antimalarial drugs (chloroquine, artemisinin-based), supportive care, antipyretics, hospitalization if severe",B50,Yes,No
+COVID-19,"Fever, dry cough, fatigue, loss of taste/smell, short
