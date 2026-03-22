@@ -1,0 +1,41 @@
+# .dockerignore — files excluded from Docker build context
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+medical_env/
+medial_agent/
+.venv/
+env/
+
+# Logs
+logs/
+*.log
+
+# Local env file (secrets — NEVER include in Docker image)
+.env
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large generated files
+embeddings/*.npy

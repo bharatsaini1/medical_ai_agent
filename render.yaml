@@ -1,0 +1,37 @@
+# render.yaml — Render deployment config
+# Docs: https://render.com/docs/infrastructure-as-code
+
+services:
+  - type: web
+    name: medical-ai-agent
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python api/app.py"
+    healthCheckPath: /health
+    envVars:
+      - key: FLASK_PORT
+        value: 10000          # Render uses port 10000 internally
+      - key: FLASK_DEBUG
+        value: "False"
+      - key: LOG_LEVEL
+        value: INFO
+      - key: GROQ_API_KEY
+        sync: false           # set manually in Render dashboard
+      - key: PINECONE_API_KEY
+        sync: false
+      - key: TAVILY_API_KEY
+        sync: false
+      - key: PINECONE_INDEX_NAME
+        value: medical-rag-index
+      - key: PINECONE_DIMENSION
+        value: "384"
+      - key: TOP_K
+        value: "5"
+      - key: CONFIDENCE_THRESHOLD
+        value: "0.35"
+      - key: BM25_WEIGHT
+        value: "0.5"
+      - key: VECTOR_WEIGHT
+        value: "0.5"
+      - key: WEB_SEARCH_RESULTS
+        value: "3"

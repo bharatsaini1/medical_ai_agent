@@ -1,0 +1,56 @@
+# ============================================================
+#  Medical AI Agent — Dependencies (Latest Stable, March 2026)
+#  Fresh install:
+#    pip install -r requirements.txt
+# ============================================================
+
+# --- HTTP client (pin to avoid groq 'proxies' breakage) ---
+httpx==0.27.2
+
+# --- Core Framework ---
+flask==3.1.0
+flask-cors==5.0.0
+
+# --- Groq LLM ---
+groq==0.11.0
+
+# --- LangChain ecosystem (all same generation — critical) ---
+langchain==0.3.25
+langchain-core==0.3.58
+langchain-community==0.3.23
+langchain-groq==0.3.2
+langchain-text-splitters==0.3.8
+
+# --- LangGraph (latest v0.4.x — new API) ---
+langgraph==0.4.1
+
+# --- LangSmith ---
+langsmith==0.3.36
+
+# --- Embeddings ---
+sentence-transformers==3.4.1
+
+# --- Vector Database ---
+pinecone==6.0.0
+
+# --- Keyword Search ---
+rank-bm25==0.2.2
+
+# --- Web Search ---
+tavily-python==0.5.0
+
+# --- Data Processing ---
+pandas==2.2.3
+numpy==1.26.4
+
+# --- Environment & Config ---
+python-dotenv==1.1.0
+
+# --- Logging ---
+loguru==0.7.3
+
+# --- Utilities ---
+requests==2.32.3
+tqdm==4.67.1
+pydantic==2.11.3
+
