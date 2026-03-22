@@ -28,6 +28,8 @@ langgraph==0.4.1
 langsmith==0.3.36
 
 # --- Embeddings ---
+# torch is pre-installed as CPU-only in Dockerfile
+# DO NOT add torch here — it will override with 8GB GPU version
 sentence-transformers==3.4.1
 
 # --- Vector Database ---
@@ -53,4 +55,3 @@ loguru==0.7.3
 requests==2.32.3
 tqdm==4.67.1
 pydantic==2.11.3
-
